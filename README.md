@@ -14,5 +14,5 @@ docker build -t samba-alpine .
 ## Install and Running
 Replace your own sharing path on your host below,
 ```
-docker run -it -p 139:139 -p 445:445 -v <HOST_SHARING_PATH>:/share samba-alpine
+docker run -it -d -p 139:139 -p 445:445 -v <HOST_SHARING_PATH>:/share samba-alpine
 ```
