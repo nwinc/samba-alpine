@@ -10,7 +10,5 @@ VOLUME /share
 
 EXPOSE 139 445
 
-CMD ["/usr/sbin/smbd -F --no-process-group"]
-
-ENTRYPOINT ["/bin/sh", "-c"]
+CMD ["/usr/sbin/smbd", "-F", "--no-process-group"]
 
